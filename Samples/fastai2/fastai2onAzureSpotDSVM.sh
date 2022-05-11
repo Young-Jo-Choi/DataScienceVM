@@ -10,8 +10,8 @@ read -s -p "Re-enter Password: " password2
 echo
 done
 
-read -p "Azure VM Zone (default: westus2): " vmzoneinput
-vmzone=${vmzoneinput:=westus2}
+read -p "Azure VM Zone (default: eastus2): " vmzoneinput
+vmzone=${vmzoneinput:=eastus2}
 
 az group create --name $vmname -l $vmzone
 
